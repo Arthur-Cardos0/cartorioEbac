@@ -146,7 +146,8 @@ int voltmenu=0;
 	    printf("Escolha a opção que desejar: \n\n");
      	printf("\t1- registrar nome. \n");
     	printf("\t2- consultar nome. \n");
-	    printf("\t3- deletar nome. \n\n\n");
+	    printf("\t3- deletar nome. \n");
+	    printf("\t4- Sair do sistema\n\n");
     	printf("Opção:");
 
     	scanf("%d", &opcao);
@@ -165,6 +166,11 @@ int voltmenu=0;
 		
 		case 3:
 		deletar();
+		break;
+		
+		case 4:
+		printf("Obrigado por utilizar o sistema!. \n");
+		return 0;
 		break;
 			
 		default:
